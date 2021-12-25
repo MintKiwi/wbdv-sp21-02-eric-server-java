@@ -69,7 +69,7 @@ function renderCourses(tableRows){
 
 
 
-function createCourse(course){
+function createCourse(tableRows){
     courseService.createCourse(tableRows).then(function(actualCourses){
         tableRows.push(actualCourses)
         renderCourses(tableRows)
